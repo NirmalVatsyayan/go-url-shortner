@@ -1,8 +1,8 @@
 package handlers
 
 import (
-	db "github.com/NirmalVatsyayan/UrlShortnerRepo/Database"
-	models "github.com/NirmalVatsyayan/UrlShortnerRepo/Models"
+	db "github.com/NirmalVatsyayan/go-url-shortner/Database"
+	models "github.com/NirmalVatsyayan/go-url-shortner/Models"
 	"time"
 	"net/http"
 	"gopkg.in/mgo.v2/bson"

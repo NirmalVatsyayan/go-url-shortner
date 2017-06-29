@@ -2,8 +2,8 @@ package router
 
 import (
 	"gopkg.in/gin-gonic/gin.v1"
-	handler "github.com/NirmalVatsyayan/UrlShortnerRepo/Handlers"
-	middleware "github.com/NirmalVatsyayan/UrlShortnerRepo/Middlewares"
+	handler "github.com/NirmalVatsyayan/go-url-shortner/Handlers"
+	middleware "github.com/NirmalVatsyayan/go-url-shortner/Middlewares"
 )
 
 func Routes(port string) *gin.Engine{

@@ -8,9 +8,9 @@ import (
 	"github.com/dgrijalva/jwt-go"
 	"gopkg.in/mgo.v2/bson"
 	"github.com/satori/go.uuid"
-	db "github.com/NirmalVatsyayan/UrlShortnerRepo/Database"
-	input "github.com/NirmalVatsyayan/UrlShortnerRepo/Input"
-	models "github.com/NirmalVatsyayan/UrlShortnerRepo/Models"
+	db "github.com/NirmalVatsyayan/go-url-shortner/Database"
+	input "github.com/NirmalVatsyayan/go-url-shortner/Input"
+	models "github.com/NirmalVatsyayan/go-url-shortner/Models"
 	"gopkg.in/gin-gonic/gin.v1"
 )
 

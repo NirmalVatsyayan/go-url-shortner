@@ -1,8 +1,8 @@
 package main
 
 import (
-	db "github.com/NirmalVatsyayan/UrlShortnerRepo/Database"
-	router "github.com/NirmalVatsyayan/UrlShortnerRepo/Router"
+	db "github.com/NirmalVatsyayan/go-url-shortner/Database"
+	router "github.com/NirmalVatsyayan/go-url-shortner/Router"
 )
 
 

@@ -1,18 +1,15 @@
 package middlewares
 
 import (
+	"gopkg.in/gin-gonic/gin.v1"
 	"github.com/dgrijalva/jwt-go/request"
 	jwt "github.com/dgrijalva/jwt-go"
 	"net/http"
 	"log"
 	"gopkg.in/mgo.v2/bson"
-	db "github.com/NirmalVatsyayan/UrlShortnerRepo/Database"
-	models "github.com/NirmalVatsyayan/UrlShortnerRepo/Models"
-	"gopkg.in/gin-gonic/gin.v1"
-
+	db "github.com/NirmalVatsyayan/go-url-shortner/Database"
+	models "github.com/NirmalVatsyayan/go-url-shortner/Models"
 )
-
-
 
 func AbortWithError(c *gin.Context, code int, message string) {
 	c.Header("WWW-Authenticate", "JWT realm="+db.Realm)

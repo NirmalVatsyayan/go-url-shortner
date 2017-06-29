@@ -3,7 +3,7 @@ package database
 import (
 	"gopkg.in/mgo.v2"
 	"time"
-	config "github.com/NirmalVatsyayan/UrlShortnerRepo/Config"
+	config "github.com/NirmalVatsyayan/go-url-shortner/Config"
 )
 
 var (
