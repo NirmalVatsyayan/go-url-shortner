@@ -17,24 +17,77 @@
 			"id": "4157670a-be32-d029-2e9e-5c6fcdad2947",
 			"headers": "",
 			"headerData": [],
-			"url": "http://localhost:8000/url/abcd",
+			"url": "http://localhost:8000/apis/redirect-url/abcdefgh",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "GET",
-			"collectionId": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
 			"data": null,
 			"dataMode": "params",
-			"name": "http://localhost:8000/url/abcd",
-			"description": "Retrieve original url from shortened url",
-			"descriptionFormat": "html",
-			"time": 1498716878543,
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"time": 1498728119223,
+			"name": "Get Original URL from the url encoded value",
+			"description": "Retrieve original url from shortened url",
+			"collectionId": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 20,
+					"headers": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "34",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 29 Jun 2017 09:21:58 GMT",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"original_url\":\"www.google.com\"}\n",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "http://localhost:8000/apis/redirect-url/<url-encoded value>",
+					"id": "41546a6f-2209-3b2f-5c78-6a35d55af36f",
+					"request": {
+						"url": "http://localhost:8000/apis/redirect-url/abcdefgh",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [],
+						"headers": "",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
 		},
 		{
 			"id": "9f7ac3f3-6b59-9534-0bd3-1f8d18573ac9",
@@ -47,24 +100,23 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:8000/user/urls",
+			"url": "http://localhost:8000/apis/shortner/urls",
 			"queryParams": [],
+			"preRequestScript": null,
 			"pathVariables": {},
 			"pathVariableData": [],
-			"preRequestScript": null,
 			"method": "GET",
-			"collectionId": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
 			"data": null,
 			"dataMode": "params",
-			"name": "http://localhost:8000/user/urls",
-			"description": "Get paginated list of all urls created by authorized user",
-			"descriptionFormat": "html",
-			"time": 1498718992009,
 			"version": 2,
-			"responses": [],
 			"tests": null,
 			"currentHelper": "normal",
-			"helperAttributes": {}
+			"helperAttributes": {},
+			"time": 1498728001168,
+			"name": "Get list of urls encoded by User",
+			"description": "Get paginated list of all urls created by authorized user",
+			"collectionId": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
+			"responses": []
 		},
 		{
 			"id": "a3f5beaa-03fc-95ca-6005-5d6cc42503d0",
@@ -77,7 +129,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:8000/user/urlinfo/abcd",
+			"url": "http://localhost:8000/apis/shortner/urls/abcdefgh",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -88,11 +140,72 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1498717585149,
-			"name": "http://localhost:8000/urlinfo/abcd",
+			"time": 1498728122282,
+			"name": "Get detail of encoded url from DB",
 			"description": "Retrieve url details for a user",
 			"collectionId": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
-			"responses": []
+			"responses": [
+				{
+					"status": "",
+					"responseCode": {
+						"code": 200,
+						"name": "OK",
+						"detail": "Standard response for successful HTTP requests. The actual response will depend on the request method used. In a GET request, the response will contain an entity corresponding to the requested resource. In a POST request the response will contain an entity describing or containing the result of the action."
+					},
+					"time": 22,
+					"headers": [
+						{
+							"name": "Content-Length",
+							"key": "Content-Length",
+							"value": "119",
+							"description": "The length of the response body in octets (8-bit bytes)"
+						},
+						{
+							"name": "Content-Type",
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8",
+							"description": "The mime type of this content"
+						},
+						{
+							"name": "Date",
+							"key": "Date",
+							"value": "Thu, 29 Jun 2017 09:22:01 GMT",
+							"description": "The date and time that the message was sent"
+						}
+					],
+					"cookies": [],
+					"mime": "",
+					"text": "{\"created_on\":\"2017-06-29T14:50:46.084+05:30\",\"encoded_url\":\"abcdefgh\",\"original_url\":\"www.google.com\",\"view_count\":1}\n",
+					"language": "json",
+					"rawDataType": "text",
+					"previewType": "text",
+					"searchResultScrolledTo": -1,
+					"forceNoPretty": false,
+					"write": true,
+					"empty": false,
+					"failed": false,
+					"name": "http://localhost:8000/apis/shortner/urls/<url encoded value>",
+					"id": "250465ed-bc93-a53d-beee-a9ef5dbdcf78",
+					"request": {
+						"url": "http://localhost:8000/apis/shortner/urls/abcdefgh",
+						"pathVariables": {},
+						"pathVariableData": [],
+						"queryParams": [],
+						"headerData": [
+							{
+								"key": "Authorization",
+								"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE",
+								"description": "",
+								"enabled": true
+							}
+						],
+						"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE\n",
+						"data": null,
+						"method": "GET",
+						"dataMode": "params"
+					}
+				}
+			]
 		},
 		{
 			"id": "c86d5efd-7d52-60b9-434f-d78c89ca1084",
@@ -105,7 +218,7 @@
 					"enabled": true
 				}
 			],
-			"url": "http://localhost:8000/url-shortner/submit",
+			"url": "http://localhost:8000/apis/shortner/submit",
 			"queryParams": [],
 			"preRequestScript": null,
 			"pathVariables": {},
@@ -121,7 +234,7 @@
 				},
 				{
 					"key": "urlEncoded",
-					"value": "abcdefghijklmnopqrstuvaa",
+					"value": "abcdefgh",
 					"description": "",
 					"type": "text",
 					"enabled": true
@@ -131,8 +244,8 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1498725798024,
-			"name": "http://localhost:8000/url-shortner/submit",
+			"time": 1498728048806,
+			"name": "Encode a url with and withouth desired encoded value",
 			"description": "Encode and save a url",
 			"collectionId": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
 			"responses": []
