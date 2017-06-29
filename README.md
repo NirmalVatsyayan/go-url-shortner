@@ -1,5 +1,5 @@
-# go-url-shortnet
-Restful backend using go-gin and jwt using MongoDb
+# go-url-shortner
+Restful backend using go-gin, jwt and MongoDb as database.
 
 **Dependencies**
     
