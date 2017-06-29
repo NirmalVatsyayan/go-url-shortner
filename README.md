@@ -1,5 +1,5 @@
-# GoRestBackend
-Restful backend using go-gin and jwt
+# go-url-shortnet
+Restful backend using go-gin and jwt using MongoDb
 
 **Dependencies**
     
@@ -14,6 +14,8 @@ Restful backend using go-gin and jwt
 
 
 
+**How to Run**
 
+    - go run main.go
 
 
