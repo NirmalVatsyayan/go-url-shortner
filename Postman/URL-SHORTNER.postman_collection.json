@@ -1,0 +1,141 @@
+{
+	"id": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
+	"name": "URL-SHORTNER",
+	"description": "",
+	"order": [
+		"c86d5efd-7d52-60b9-434f-d78c89ca1084",
+		"4157670a-be32-d029-2e9e-5c6fcdad2947",
+		"a3f5beaa-03fc-95ca-6005-5d6cc42503d0",
+		"9f7ac3f3-6b59-9534-0bd3-1f8d18573ac9"
+	],
+	"folders": [],
+	"timestamp": 1498716844874,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "4157670a-be32-d029-2e9e-5c6fcdad2947",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8000/url/abcd",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8000/url/abcd",
+			"description": "Retrieve original url from shortened url",
+			"descriptionFormat": "html",
+			"time": 1498716878543,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "9f7ac3f3-6b59-9534-0bd3-1f8d18573ac9",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/user/urls",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8000/user/urls",
+			"description": "Get paginated list of all urls created by authorized user",
+			"descriptionFormat": "html",
+			"time": 1498718992009,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "a3f5beaa-03fc-95ca-6005-5d6cc42503d0",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/user/urlinfo/abcd",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1498717585149,
+			"name": "http://localhost:8000/urlinfo/abcd",
+			"description": "Retrieve url details for a user",
+			"collectionId": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
+			"responses": []
+		},
+		{
+			"id": "c86d5efd-7d52-60b9-434f-d78c89ca1084",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/url-shortner/submit",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "POST",
+			"data": [
+				{
+					"key": "url",
+					"value": "www.google.com",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "urlEncoded",
+					"value": "abcdefghijklmnopqrstuvaa",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1498725798024,
+			"name": "http://localhost:8000/url-shortner/submit",
+			"description": "Encode and save a url",
+			"collectionId": "a1febf7d-915c-89d9-4a27-3d3b9bf0712f",
+			"responses": []
+		}
+	]
+}

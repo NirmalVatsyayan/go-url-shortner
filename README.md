@@ -1,1 +1,2 @@
-# go-url-shortner
+# GoRestBackend
+Restful backend using go-gin and jwt

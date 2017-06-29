@@ -1,0 +1,170 @@
+{
+	"id": "3b61d282-07ed-b017-ca08-d95d6009b35b",
+	"name": "USER_AUTH_GO",
+	"description": "",
+	"order": [
+		"74d52fd9-4331-16bc-ea00-ce8ced46c32e",
+		"91134b6b-b09c-49fd-95e7-85510387e6c0",
+		"44c596f7-de96-9f23-8cf7-ea9eea716483",
+		"f8946252-b67b-055b-f95a-7e6d85d50970",
+		"47f155cf-e405-154a-90ac-674267958aa7"
+	],
+	"folders": [],
+	"timestamp": 1498622384193,
+	"owner": 0,
+	"public": false,
+	"requests": [
+		{
+			"id": "44c596f7-de96-9f23-8cf7-ea9eea716483",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/auth/hello",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3b61d282-07ed-b017-ca08-d95d6009b35b",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8000/auth/hello",
+			"description": "Authorized resource accessibility test",
+			"descriptionFormat": "html",
+			"time": 1498637617394,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "47f155cf-e405-154a-90ac-674267958aa7",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/user/profile",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3b61d282-07ed-b017-ca08-d95d6009b35b",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8000/user/profile",
+			"description": "Get user profile information",
+			"descriptionFormat": "html",
+			"time": 1498726260383,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		},
+		{
+			"id": "74d52fd9-4331-16bc-ea00-ce8ced46c32e",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/register",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3b61d282-07ed-b017-ca08-d95d6009b35b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8000/register",
+			"description": "User registration",
+			"descriptionFormat": "html",
+			"time": 1498637584767,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"name\": \"nirmal\",\n\"username\": \"nirmal1\",\n\"password\": \"password\"\n}"
+		},
+		{
+			"id": "91134b6b-b09c-49fd-95e7-85510387e6c0",
+			"headers": "Content-Type: application/json\n",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"value": "application/json",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/login",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "POST",
+			"collectionId": "3b61d282-07ed-b017-ca08-d95d6009b35b",
+			"data": [],
+			"dataMode": "raw",
+			"name": "http://localhost:8000/login",
+			"description": "User login",
+			"descriptionFormat": "html",
+			"time": 1498637596076,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"rawModeData": "{\n\"username\":\"nirmal1\",\n\"password\":\"password\"\n}"
+		},
+		{
+			"id": "f8946252-b67b-055b-f95a-7e6d85d50970",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE\n",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1MDEyMjM0NzgsImlkIjoiMjQxNWJiM2MtMDNhNC00ZWNhLTgwZTctNTJjODIzNmQzMjFjIn0.jGHBRF414uZ0yC11hwSJ_ma6Wo-dBPoHlsyJaAJsYWE",
+					"description": "",
+					"enabled": true
+				}
+			],
+			"url": "http://localhost:8000/auth/refresh_token",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "3b61d282-07ed-b017-ca08-d95d6009b35b",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8000/auth/refresh_token",
+			"description": "User Token refresh",
+			"descriptionFormat": "html",
+			"time": 1498637628378,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
+		}
+	]
+}
